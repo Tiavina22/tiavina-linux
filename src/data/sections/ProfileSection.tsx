@@ -50,6 +50,10 @@ export const ProfileSection: TerminalSection = {
             <span className="text-terminal-text ml-2">Mobile Developer</span>
           </div>
           <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">To be: </span>
+            <span className="text-terminal-text ml-2">An Software Engineer and Aeronautics Engineer</span>
+          </div>
+          <div className="flex items-center">
             <span className="text-terminal-yellow font-bold">Age: </span>
             <span className="text-terminal-text ml-2">21</span>
           </div>
