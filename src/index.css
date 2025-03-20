@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -105,4 +104,17 @@
 
 .command-input:focus {
   outline: none;
+}
+
+.ascii-animation {
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% { color: theme('colors.terminal.green'); }
+  20% { color: theme('colors.terminal.cyan'); }
+  40% { color: theme('colors.terminal.purple'); }
+  60% { color: theme('colors.terminal.pink'); }
+  80% { color: theme('colors.terminal.yellow'); }
+  100% { color: theme('colors.terminal.green'); }
 }

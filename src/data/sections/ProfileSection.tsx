@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { TerminalSection } from '../types';
 
 const AsciiLogo = () => (
-  <pre className="text-terminal-green text-sm font-mono leading-none mr-8">
+  <pre className="ascii-animation text-sm font-mono leading-none mr-8">
     {`
      ████████╗██╗ █████╗ ██╗   ██╗██╗███╗   ██╗ █████╗ 
      ╚══██╔══╝██║██╔══██╗██║   ██║██║████╗  ██║██╔══██╗
