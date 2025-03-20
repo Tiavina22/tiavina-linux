@@ -12,17 +12,35 @@ export const ExperienceSection: TerminalSection = {
       
       <div className="mb-6">
         <div className="text-terminal-green font-bold">Software Engineer</div>
-        <div className="text-terminal-yellow italic">Vanilla Pay International | October 2024 - Present</div>
+        <div className="text-terminal-yellow italic">Vanilla Pay International | February 2025 - Present</div>
+        <ul className="mt-2 pl-5 list-disc text-terminal-text">
+          <li>Developing new features for the company's all platform.</li>
+        </ul>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Mobile Develop Intern</div>
+        <div className="text-terminal-yellow italic">Vanilla Pay International | October 2024 - January 2025 (3 Months)</div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
           <li>Developing new features for the company's mobile platform.</li>
         </ul>
       </div>
-      
+
       <div className="mb-6">
         <div className="text-terminal-green font-bold">DevOps & Mobile Developer</div>
-        <div className="text-terminal-yellow italic">Mistery | June 2023 - March 2025</div>
+        <div className="text-terminal-yellow italic">Mistery | October 2024 - Present</div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
-          <li>Backend, database management, DevOps, and mobile developer for a book streaming and booking application.</li>
+          <li>Backend, database management, DevOps.</li>
+          <li>Contributed to the backend development and deploiement of a mobile platform using Node, PostgreSQL and Supabase.</li>
+        </ul>
+      </div>
+      
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Mobile Developer</div>
+        <div className="text-terminal-yellow italic">Mistery | July 2023 - Mai 2024 (11 Months)</div>
+        <ul className="mt-2 pl-5 list-disc text-terminal-text">
+          <li>Mobile developer for a book streaming and booking application.</li>
           <li>Contributed to the development of a mobile platform using Flutter.</li>
         </ul>
       </div>

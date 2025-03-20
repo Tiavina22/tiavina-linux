@@ -137,7 +137,7 @@ const Terminal: React.FC = () => {
         >
           {/* Welcome message */}
           <div className={`${isInitialAnimation ? "animate-typing" : ""} break-words`}>
-            <span className="text-terminal-green">Welcome to Tiavina Ramilison's portfolio terminal.</span>
+            <span className="text-terminal-green">Welcome to my portfolio terminal.</span>
             <span className="text-terminal-text"> Type '<span className="text-terminal-yellow">help</span>' for available commands.</span>
           </div>
           
