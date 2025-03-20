@@ -34,7 +34,11 @@ export const ProfileSection: TerminalSection = {
             <span className="text-terminal-text ml-2">Tiavina Ramilison</span>
           </div>
           <div className="flex items-center">
-            <span className="text-terminal-yellow font-bold">OS: </span>
+            <span className="text-terminal-yellow font-bold">XP: </span>
+            <span className="text-terminal-text ml-2">1 year</span>
+          </div>
+          <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">Status: </span>
             <span className="text-terminal-text ml-2">Software Engineer Student</span>
           </div>
           <div className="flex items-center">
@@ -42,7 +46,7 @@ export const ProfileSection: TerminalSection = {
             <span className="text-terminal-text ml-2">Antananarivo, MG</span>
           </div>
           <div className="flex items-center">
-            <span className="text-terminal-yellow font-bold">Role: </span>
+            <span className="text-terminal-yellow font-bold">& Role: </span>
             <span className="text-terminal-text ml-2">Mobile Developer</span>
           </div>
           <div className="flex items-center">

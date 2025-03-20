@@ -3,17 +3,18 @@ import TerminalPrompt from './TerminalPrompt';
 import TerminalOutput from './TerminalOutput';
 import { terminalPages } from '../data/terminalData';
 import { Terminal as TerminalIcon } from 'lucide-react';
+import Cursor from './Cursor';
 
 const Terminal: React.FC = () => {
   const [outputs, setOutputs] = useState<React.ReactNode[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(0);
-  const [showWelcome, setShowWelcome] = useState<boolean>(true);
+  const [isInitialAnimation, setIsInitialAnimation] = useState<boolean>(true);
   const terminalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Auto display first page after welcome message
     const timer = setTimeout(() => {
-      setShowWelcome(false);
+      setIsInitialAnimation(false);
       displayPage(0);
     }, 1000);
 
@@ -44,8 +45,11 @@ const Terminal: React.FC = () => {
     // Add the command to the terminal
     const commandOutput = (
       <div className="flex mt-2" key={`command-${Date.now()}`}>
-        <span className="text-terminal-green mr-2">visitor@tiavina:~$</span>
-        <span className="text-terminal-text">{command}</span>
+        <div className="flex items-center">
+          <span className="text-terminal-green mr-2">visitor@tiavina:~$</span>
+          <Cursor />
+        </div>
+        <span className="text-terminal-text ml-2">{command}</span>
       </div>
     );
     
@@ -132,13 +136,11 @@ const Terminal: React.FC = () => {
           ref={terminalRef}
           className="terminal-content flex-1 p-4 overflow-y-auto font-mono text-sm md:text-base"
         >
-          {/* Welcome message */}
-          {showWelcome && (
-            <div className="animate-typing overflow-hidden whitespace-nowrap">
-              <span className="text-terminal-green">Welcome to Tiavina Ramilison's portfolio terminal.</span>
-              <span className="text-terminal-text"> Type '<span className="text-terminal-yellow">help</span>' for available commands.</span>
-            </div>
-          )}
+          {/* Welcome message - toujours visible */}
+          <div className={isInitialAnimation ? "animate-typing overflow-hidden whitespace-nowrap" : "whitespace-nowrap"}>
+            <span className="text-terminal-green">Welcome to Tiavina Ramilison's portfolio terminal.</span>
+            <span className="text-terminal-text"> Type '<span className="text-terminal-yellow">help</span>' for available commands.</span>
+          </div>
           
           {/* Terminal outputs */}
           {outputs.map((output, index) => (
