@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { TerminalSection } from '../types';
 
 export const ProfileSection: TerminalSection = {
@@ -33,25 +33,29 @@ export const ProfileSection: TerminalSection = {
       <div className="mb-4">
         <div className="text-terminal-green font-bold mb-2">Contact:</div>
         <ul className="space-y-1">
-          <li>
+          <li className="flex items-center gap-2">
+            <FaGithub size={20} className="text-terminal-yellow" />
             <span className="text-terminal-yellow">GitHub: </span>
             <a href="https://github.com/Tiavina22" target="_blank" rel="noopener noreferrer" className="terminal-link">
               https://github.com/Tiavina22
             </a>
           </li>
-          <li>
+          <li className="flex items-center gap-2">
+            <FaLinkedin size={20} className="text-terminal-yellow" />
             <span className="text-terminal-yellow">LinkedIn: </span>
             <a href="https://www.linkedin.com/in/tiavina-ramilison" target="_blank" rel="noopener noreferrer" className="terminal-link">
               https://www.linkedin.com/in/tiavina-ramilison
             </a>
           </li>
-          <li>
+          <li className="flex items-center gap-2">
+            <FaEnvelope size={20} className="text-terminal-yellow" />
             <span className="text-terminal-yellow">Email: </span>
             <a href="mailto:tiavinaramilison22@gmail.com" className="terminal-link">
               tiavinaramilison22@gmail.com
             </a>
           </li>
-          <li>
+          <li className="flex items-center gap-2">
+            <FaWhatsapp size={20} className="text-terminal-yellow" />
             <span className="text-terminal-yellow">WhatsApp: </span>
             <a href="https://wa.me/+261345939753" target="_blank" rel="noopener noreferrer" className="terminal-link">
               https://wa.me/+261345939753
