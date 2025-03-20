@@ -112,43 +112,46 @@ const Terminal: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-terminal-background flex items-center justify-center">
-      <div className="terminal-window w-full h-full rounded-md overflow-hidden flex flex-col shadow-2xl">
+    <div className="fixed inset-0 z-50 bg-terminal-background flex items-center justify-center p-0 sm:p-4">
+      <div className="terminal-window w-full h-full sm:h-[95vh] rounded-none sm:rounded-md overflow-hidden flex flex-col shadow-2xl">
         {/* Terminal header */}
-        <div className="bg-terminal-background border-b border-terminal-comment p-3 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="h-3 w-3 rounded-full bg-red-500"></div>
-            <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
-            <div className="h-3 w-3 rounded-full bg-green-500"></div>
+        <div className="bg-terminal-background border-b border-terminal-comment px-2 sm:px-3 py-2 flex items-center justify-between">
+          <div className="flex items-center space-x-1 sm:space-x-2">
+            <div className="h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-red-500"></div>
+            <div className="h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-yellow-500"></div>
+            <div className="h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-green-500"></div>
           </div>
           
-          <div className="flex items-center space-x-2">
-            <TerminalIcon size={16} className="text-terminal-text" />
-            <span className="text-terminal-text text-sm font-medium">tiavina@portfolio:~</span>
+          <div className="flex items-center space-x-2 truncate">
+            <TerminalIcon size={14} className="text-terminal-text shrink-0" />
+            <span className="text-terminal-text text-xs sm:text-sm font-medium truncate">tiavina@portfolio:~</span>
           </div>
           
-          {/* Supprimer les boutons de contrôle */}
-          <div className="w-24"></div> {/* Espace vide pour maintenir l'alignement */}
+          <div className="w-16 sm:w-24"></div>
         </div>
         
         {/* Terminal content */}
         <div 
           ref={terminalRef}
-          className="terminal-content flex-1 p-4 overflow-y-auto font-mono text-sm md:text-base"
+          className="terminal-content flex-1 p-2 sm:p-4 overflow-y-auto overflow-x-hidden font-mono text-xs sm:text-sm md:text-base"
         >
-          {/* Welcome message - toujours visible */}
-          <div className={isInitialAnimation ? "animate-typing overflow-hidden whitespace-nowrap" : "whitespace-nowrap"}>
+          {/* Welcome message */}
+          <div className={`${isInitialAnimation ? "animate-typing" : ""} break-words`}>
             <span className="text-terminal-green">Welcome to Tiavina Ramilison's portfolio terminal.</span>
             <span className="text-terminal-text"> Type '<span className="text-terminal-yellow">help</span>' for available commands.</span>
           </div>
           
-          {/* Terminal outputs */}
-          {outputs.map((output, index) => (
-            <React.Fragment key={index}>{output}</React.Fragment>
-          ))}
+          {/* Terminal outputs with word wrap */}
+          <div className="break-words">
+            {outputs.map((output, index) => (
+              <React.Fragment key={index}>{output}</React.Fragment>
+            ))}
+          </div>
           
           {/* Command prompt */}
-          <TerminalPrompt onCommand={handleCommand} showPrompt={true} />
+          <div className="break-words">
+            <TerminalPrompt onCommand={handleCommand} showPrompt={true} />
+          </div>
         </div>
       </div>
     </div>

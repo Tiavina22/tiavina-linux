@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { TerminalSection } from '../types';
 
 const AsciiLogo = () => (
-  <pre className="ascii-animation text-sm font-mono leading-none mr-8">
+  <pre className="ascii-animation text-[0.4rem] xs:text-[0.5rem] sm:text-xs md:text-sm font-mono leading-none mr-1 sm:mr-2 md:mr-8 overflow-x-auto whitespace-pre">
     {`
      ████████╗██╗ █████╗ ██╗   ██╗██╗███╗   ██╗ █████╗ 
      ╚══██╔══╝██║██╔══██╗██║   ██║██║████╗  ██║██╔══██╗
@@ -17,18 +17,20 @@ const AsciiLogo = () => (
 
 export const ProfileSection: TerminalSection = {
   content: (
-    <div className="flex items-start mt-4">
-      <AsciiLogo />
+    <div className="flex flex-col gap-4 sm:flex-row items-start mt-4">
+      <div className="w-full sm:w-auto -mx-2 sm:mx-0">
+        <AsciiLogo />
+      </div>
       
-      <div className="flex-1">
-        <div className="mb-2 flex">
-          <span className="text-terminal-green font-bold">tiavina</span>
+      <div className="flex-1 w-full">
+        <div className="mb-2 flex items-center">
+          <span className="text-terminal-green font-bold text-sm md:text-base">tiavina</span>
           <span className="text-terminal-text">@</span>
-          <span className="text-terminal-purple">portfolio</span>
+          <span className="text-terminal-purple text-sm md:text-base">portfolio</span>
         </div>
         <div className="border-b border-terminal-text mb-4"></div>
         
-        <div className="grid grid-cols-2 gap-y-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-1 text-sm md:text-base">
           <div className="flex items-center">
             <span className="text-terminal-yellow font-bold">Name: </span>
             <span className="text-terminal-text ml-2">Tiavina Ramilison</span>
@@ -61,7 +63,7 @@ export const ProfileSection: TerminalSection = {
 
         <div className="border-b border-terminal-text my-4"></div>
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm md:text-base">
           <div className="flex items-center gap-2">
             <FaGithub size={16} className="text-terminal-purple" />
             <a href="https://github.com/Tiavina22" target="_blank" rel="noopener noreferrer" className="terminal-link">
@@ -90,14 +92,14 @@ export const ProfileSection: TerminalSection = {
 
         <div className="border-b border-terminal-text my-4"></div>
         
-        <div className="flex">
-          <div className="flex gap-2">
-            <span className="w-4 h-4 bg-terminal-red"></span>
-            <span className="w-4 h-4 bg-terminal-green"></span>
-            <span className="w-4 h-4 bg-terminal-yellow"></span>
-            <span className="w-4 h-4 bg-terminal-blue"></span>
-            <span className="w-4 h-4 bg-terminal-purple"></span>
-            <span className="w-4 h-4 bg-terminal-cyan"></span>
+        <div className="flex justify-center sm:justify-start">
+          <div className="flex gap-1 sm:gap-2">
+            <span className="w-3 h-3 sm:w-4 sm:h-4 bg-terminal-red"></span>
+            <span className="w-3 h-3 sm:w-4 sm:h-4 bg-terminal-green"></span>
+            <span className="w-3 h-3 sm:w-4 sm:h-4 bg-terminal-yellow"></span>
+            <span className="w-3 h-3 sm:w-4 sm:h-4 bg-terminal-blue"></span>
+            <span className="w-3 h-3 sm:w-4 sm:h-4 bg-terminal-purple"></span>
+            <span className="w-3 h-3 sm:w-4 sm:h-4 bg-terminal-cyan"></span>
           </div>
         </div>
       </div>
