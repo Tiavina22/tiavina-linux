@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import Cursor from './Cursor';
 
@@ -39,8 +38,11 @@ const TerminalPrompt: React.FC<TerminalPromptProps> = ({ onCommand, showPrompt }
 
   return (
     <div className="flex items-center mt-2 animate-fadeIn">
-      <span className="text-terminal-green mr-2">visitor@tiavina:~$</span>
-      <form onSubmit={handleSubmit} className="flex-1 flex items-center">
+      <div className="flex items-center">
+        <span className="text-terminal-green">visitor@tiavina:~$</span>
+        <Cursor />
+      </div>
+      <form onSubmit={handleSubmit} className="flex-1 flex items-center ml-2">
         <input
           ref={inputRef}
           type="text"
@@ -50,9 +52,6 @@ const TerminalPrompt: React.FC<TerminalPromptProps> = ({ onCommand, showPrompt }
           autoFocus
           aria-label="Terminal command input"
         />
-        <div className="ml-1">
-          <Cursor />
-        </div>
       </form>
     </div>
   );
