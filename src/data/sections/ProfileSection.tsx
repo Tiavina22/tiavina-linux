@@ -2,67 +2,97 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { TerminalSection } from '../types';
 
+const AsciiLogo = () => (
+  <pre className="text-terminal-green text-sm font-mono leading-none mr-8">
+    {`
+     ████████╗██╗ █████╗ ██╗   ██╗██╗███╗   ██╗ █████╗ 
+     ╚══██╔══╝██║██╔══██╗██║   ██║██║████╗  ██║██╔══██╗
+        ██║   ██║███████║██║   ██║██║██╔██╗ ██║███████║
+        ██║   ██║██╔══██║╚██╗ ██╔╝██║██║╚██╗██║██╔══██║
+        ██║   ██║██║  ██║ ╚████╔╝ ██║██║ ╚████║██║  ██║
+        ╚═╝   ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+    `}
+  </pre>
+);
+
 export const ProfileSection: TerminalSection = {
   content: (
-    <>
-      <div className="mb-4">
-        <span className="text-terminal-purple text-2xl font-bold">Name: </span>
-        <span className="text-terminal-text text-2xl">Tiavina Ramilison</span>
-      </div>
-      <div className="mb-4">
-        <span className="text-terminal-purple font-bold">Role: </span>
-        <span className="text-terminal-text">Software Engineer Student | Mobile Developer</span>
-      </div>
-      <div className="mb-4">
-        <span className="text-terminal-purple font-bold">Age: </span>
-        <span className="text-terminal-text">21 years old</span>
-      </div>
-      <div className="mb-6">
-        <span className="text-terminal-purple font-bold">Location: </span>
-        <span className="text-terminal-text">Antananarivo, Madagascar</span>
-      </div>
+    <div className="flex items-start mt-4">
+      <AsciiLogo />
+      
+      <div className="flex-1">
+        <div className="mb-2 flex">
+          <span className="text-terminal-green font-bold">tiavina</span>
+          <span className="text-terminal-text">@</span>
+          <span className="text-terminal-purple">portfolio</span>
+        </div>
+        <div className="border-b border-terminal-text mb-4"></div>
+        
+        <div className="grid grid-cols-2 gap-y-1">
+          <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">Name: </span>
+            <span className="text-terminal-text ml-2">Tiavina Ramilison</span>
+          </div>
+          <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">OS: </span>
+            <span className="text-terminal-text ml-2">Software Engineer Student</span>
+          </div>
+          <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">Location: </span>
+            <span className="text-terminal-text ml-2">Antananarivo, MG</span>
+          </div>
+          <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">Role: </span>
+            <span className="text-terminal-text ml-2">Mobile Developer</span>
+          </div>
+          <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">Age: </span>
+            <span className="text-terminal-text ml-2">21</span>
+          </div>
+        </div>
 
-      <div className="mb-6">
-        <p className="text-terminal-text">
-          I'm passionate about technology and dedicated to creating innovative digital experiences. 
-          With a drive for continuous learning, I embrace new challenges and always strive to push 
-          the boundaries of what's possible in tech.
-        </p>
-      </div>
+        <div className="border-b border-terminal-text my-4"></div>
 
-      <div className="mb-4">
-        <div className="text-terminal-green font-bold mb-2">Contact:</div>
-        <ul className="space-y-1">
-          <li className="flex items-center gap-2">
-            <FaGithub size={20} className="text-terminal-yellow" />
-            <span className="text-terminal-yellow">GitHub: </span>
+        <div className="grid grid-cols-2 gap-2">
+          <div className="flex items-center gap-2">
+            <FaGithub size={16} className="text-terminal-purple" />
             <a href="https://github.com/Tiavina22" target="_blank" rel="noopener noreferrer" className="terminal-link">
-              https://github.com/Tiavina22
+              github.com/Tiavina22
             </a>
-          </li>
-          <li className="flex items-center gap-2">
-            <FaLinkedin size={20} className="text-terminal-yellow" />
-            <span className="text-terminal-yellow">LinkedIn: </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaLinkedin size={16} className="text-terminal-purple" />
             <a href="https://www.linkedin.com/in/tiavina-ramilison" target="_blank" rel="noopener noreferrer" className="terminal-link">
-              https://www.linkedin.com/in/tiavina-ramilison
+              Tiavina Ramilison
             </a>
-          </li>
-          <li className="flex items-center gap-2">
-            <FaEnvelope size={20} className="text-terminal-yellow" />
-            <span className="text-terminal-yellow">Email: </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaEnvelope size={16} className="text-terminal-purple" />
             <a href="mailto:tiavinaramilison22@gmail.com" className="terminal-link">
               tiavinaramilison22@gmail.com
             </a>
-          </li>
-          <li className="flex items-center gap-2">
-            <FaWhatsapp size={20} className="text-terminal-yellow" />
-            <span className="text-terminal-yellow">WhatsApp: </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaWhatsapp size={16} className="text-terminal-purple" />
             <a href="https://wa.me/+261345939753" target="_blank" rel="noopener noreferrer" className="terminal-link">
-              https://wa.me/+261345939753
+              +261 34 59 397 53
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <div className="border-b border-terminal-text my-4"></div>
+        
+        <div className="flex">
+          <div className="flex gap-2">
+            <span className="w-4 h-4 bg-terminal-red"></span>
+            <span className="w-4 h-4 bg-terminal-green"></span>
+            <span className="w-4 h-4 bg-terminal-yellow"></span>
+            <span className="w-4 h-4 bg-terminal-blue"></span>
+            <span className="w-4 h-4 bg-terminal-purple"></span>
+            <span className="w-4 h-4 bg-terminal-cyan"></span>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   )
 };
