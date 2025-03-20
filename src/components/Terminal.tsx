@@ -1,18 +1,14 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import TerminalPrompt from './TerminalPrompt';
 import TerminalOutput from './TerminalOutput';
 import { terminalPages } from '../data/terminalData';
-import { Terminal as TerminalIcon, X, Minus, Maximize } from 'lucide-react';
+import { Terminal as TerminalIcon } from 'lucide-react';
 
 const Terminal: React.FC = () => {
   const [outputs, setOutputs] = useState<React.ReactNode[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(0);
   const [showWelcome, setShowWelcome] = useState<boolean>(true);
   const terminalRef = useRef<HTMLDivElement>(null);
-
-  // Terminal window state
-  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     // Auto display first page after welcome message
@@ -111,13 +107,9 @@ const Terminal: React.FC = () => {
     setOutputs(prevOutputs => [...prevOutputs, systemOutput]);
   };
 
-  const toggleFullscreen = () => {
-    setIsFullscreen(!isFullscreen);
-  };
-
   return (
-    <div className={`${isFullscreen ? 'fixed inset-0 z-50' : 'min-h-screen w-full'} bg-terminal-background flex items-center justify-center p-4`}>
-      <div className={`terminal-window w-full ${isFullscreen ? 'h-full' : 'max-w-4xl h-[85vh]'} rounded-md overflow-hidden flex flex-col shadow-2xl`}>
+    <div className="fixed inset-0 z-50 bg-terminal-background flex items-center justify-center">
+      <div className="terminal-window w-full h-full rounded-md overflow-hidden flex flex-col shadow-2xl">
         {/* Terminal header */}
         <div className="bg-terminal-background border-b border-terminal-comment p-3 flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -131,20 +123,8 @@ const Terminal: React.FC = () => {
             <span className="text-terminal-text text-sm font-medium">tiavina@portfolio:~</span>
           </div>
           
-          <div className="flex items-center space-x-3">
-            <button className="text-terminal-text hover:text-terminal-yellow transition-colors">
-              <Minus size={16} />
-            </button>
-            <button 
-              className="text-terminal-text hover:text-terminal-yellow transition-colors"
-              onClick={toggleFullscreen}
-            >
-              <Maximize size={16} />
-            </button>
-            <button className="text-terminal-text hover:text-terminal-red transition-colors">
-              <X size={16} />
-            </button>
-          </div>
+          {/* Supprimer les boutons de contrôle */}
+          <div className="w-24"></div> {/* Espace vide pour maintenir l'alignement */}
         </div>
         
         {/* Terminal content */}
