@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply bg-terminal-background text-terminal-text font-mono antialiased;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-terminal-comment;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-terminal-purple;
+  }
+}
+
+.glowing-text {
+  text-shadow: 0 0 5px rgba(79, 209, 197, 0.5);
+}
+
+.terminal-window {
+  background-color: rgba(26, 31, 44, 0.95);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-content {
+  background-image: 
+    linear-gradient(rgba(26, 31, 44, 0.02) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent);
+  background-size: 100% 4px, 4px 100%;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(98, 114, 164, 0.4), transparent);
+}
+
+.terminal-link {
+  @apply text-terminal-cyan underline decoration-dashed decoration-2 underline-offset-4 transition-all;
+}
+
+.terminal-link:hover {
+  @apply text-terminal-pink no-underline;
+  text-shadow: 0 0 8px rgba(255, 121, 198, 0.7);
+}
+
+.command-input {
+  background: transparent;
+  caret-color: transparent;
+}
+
+.command-input:focus {
+  outline: none;
+}
