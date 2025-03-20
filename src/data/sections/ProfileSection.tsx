@@ -15,7 +15,7 @@ export const ProfileSection: TerminalSection = {
       </div>
       <div className="mb-4">
         <span className="text-terminal-purple font-bold">Age: </span>
-        <span className="text-terminal-text">20 years old</span>
+        <span className="text-terminal-text">21 years old</span>
       </div>
       <div className="mb-6">
         <span className="text-terminal-purple font-bold">Location: </span>
