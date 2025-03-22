@@ -76,6 +76,61 @@ export const ProjectsSection: TerminalSection = {
           <span className="text-terminal-text">Javascript</span>
         </div>
       </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Gamo</div>
+        <p className="mt-2 text-terminal-text">
+           Gamo is a web application for basketball scoreboarding.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Javascript</span>
+        </div>
+      </div>
+
+        <div className="mb-6">
+        <div className="text-terminal-green font-bold">Ball</div>
+        <p className="mt-2 text-terminal-text">
+            A captivating arcade game with a neon aesthetic, developed in JavaScript. Test your reflexes by guiding a luminous ball through obstacles while collecting power-ups.
+       </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Javascript</span>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Truncated</div>
+        <p className="mt-2 text-terminal-text">
+           Truncated is a simple Flutter widget that truncates long text and appends an ellipsis or any custom suffix. It supports expanding the text with a tap and provides smooth animation for opening and closing the text.
+       </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Dart, Flutter</span>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Tiny</div>
+        <p className="mt-2 text-terminal-text"> 
+          Tiny is a command-line CLI note manager developed in Dart. It enables users to add, list, delete, update, and search notes stored locally in a JSON file
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Dart, Bash, Json</span>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Matematico</div>
+        <p className="mt-2 text-terminal-text"> 
+          This is a plugin for matematics, available integration numeric and matrix functionnality, OpenSource. Build with Nodejs.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Javascript, Node</span>
+        </div>
+      </div>
       
       <div className="mt-8 text-terminal-red italic">
         [Command not found. Use 'next' to continue or 'previous' to go back.]
