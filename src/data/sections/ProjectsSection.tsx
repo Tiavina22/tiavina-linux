@@ -54,6 +54,28 @@ export const ProjectsSection: TerminalSection = {
           <span className="text-terminal-text">Typescript, React, Vite, Tailwind</span>
         </div>
       </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Gift</div>
+        <p className="mt-2 text-terminal-text">
+         An application designed to help users discover personalized gift ideas. By considering the recipient's tastes, preferences, and interests, this app simplifies the process of finding the perfect gift for any occasion. 
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Typescript, React, Vite, Tailwind</span>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Pixel Adventure</div>
+        <p className="mt-2 text-terminal-text">
+      Pixel Adventure is a dynamic 2D platform game that combines retro pixel art style with modern gaming mechanics. Players control an agile character capable of running, jumping, and attacking through challenging levels.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Javascript</span>
+        </div>
+      </div>
       
       <div className="mt-8 text-terminal-red italic">
         [Command not found. Use 'next' to continue or 'previous' to go back.]
