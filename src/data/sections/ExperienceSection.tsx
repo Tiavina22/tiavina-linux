@@ -11,8 +11,8 @@ export const ExperienceSection: TerminalSection = {
       <div className="section-divider mb-4"></div>
       
       <div className="mb-6">
-        <div className="text-terminal-green font-bold">Software Engineer</div>
-        <div className="text-terminal-yellow italic">Vanilla Pay International | February 2025 - Present</div>
+        <div className="text-terminal-green font-bold">Software & Mobile Developer</div>
+        <div className="text-terminal-yellow italic">Vanilla Pay International | January 2025 - Present</div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
           <li>Developing new features for the company's all platform.</li>
         </ul>
@@ -20,7 +20,7 @@ export const ExperienceSection: TerminalSection = {
 
       <div className="mb-6">
         <div className="text-terminal-green font-bold">Mobile Develop Intern</div>
-        <div className="text-terminal-yellow italic">Vanilla Pay International | October 2024 - January 2025 (3 Months)</div>
+        <div className="text-terminal-yellow italic">Vanilla Pay International | October 2024 - December 2025 (3 Months)</div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
           <li>Developing new features for the company's mobile platform.</li>
         </ul>
