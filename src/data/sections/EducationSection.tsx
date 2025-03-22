@@ -11,7 +11,7 @@ export const EducationSection: TerminalSection = {
       <div className="section-divider mb-4"></div>
       
       <div className="mb-6">
-        <div className="text-terminal-green font-bold">Third Year in Computer Science</div>
+        <div className="text-terminal-green font-bold">Bachelor's degree in Computer Science</div>
         <div className="text-terminal-yellow italic">University of Antananarivo CNTEMAD | 2024 - Present</div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
           <li>Specializing in Software Engineering and Database Management.</li>
