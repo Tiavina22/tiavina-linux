@@ -13,15 +13,25 @@ export const ProjectsSection: TerminalSection = {
       <div className="mb-6">
         <div className="text-terminal-green font-bold">Lyrify</div>
         <p className="mt-2 text-terminal-text">
-          An app that synchronizes lyrics with music. Featuring Malagasy songs from the Tononkira collection, 
-          Lyrify brings lyrics to life with perfect timing.
+          Lyrify is an app that brings your music to life with perfectly synced lyrics. Dive into a unique musical journey where every song reveals its story, one lyric at a time. In addition to featuring lyrics powered by the lrclib library, Lyrify also includes Malagasy songs from the renowned Tononkira collection. Enjoy a rich and authentic experience that combines precise lyric synchronization with the cultural diversity of Malagasy music and currently features 500 lyrics.
         </p>
         <div className="mt-2">
           <span className="text-terminal-yellow">Technologies: </span>
           <span className="text-terminal-text">Dart, Flutter, JavaScript, Node.js, MySQL</span>
         </div>
       </div>
-      
+
+       <div className="mb-6">
+        <div className="text-terminal-green font-bold">Appistery</div>
+        <p className="mt-2 text-terminal-text">
+         A streaming app that immerses you in the world of Malagasy literature. Discover captivating stories and unique experiences that transport and inspire with every page. Perfect for lovers of traditional and modern Malagasy tales.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Dart, Flutter, Php, MySQL</span>
+        </div>
+      </div>
+
       <div className="mb-6">
         <div className="text-terminal-green font-bold">TinyDesk</div>
         <p className="mt-2 text-terminal-text">
@@ -31,6 +41,17 @@ export const ProjectsSection: TerminalSection = {
         <div className="mt-2">
           <span className="text-terminal-yellow">Technologies: </span>
           <span className="text-terminal-text">Dart, Flutter, JavaScript, Node.js, PostgreSQL</span>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">SvgHub</div>
+        <p className="mt-2 text-terminal-text">
+          Access a comprehensive collection of SVG logos for your development projects through this web app. Download high-quality logos for free.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Typescript, React, Vite, Tailwind</span>
         </div>
       </div>
       
