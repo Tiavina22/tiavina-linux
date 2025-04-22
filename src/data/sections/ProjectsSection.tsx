@@ -11,6 +11,21 @@ export const ProjectsSection: TerminalSection = {
       <div className="section-divider mb-4"></div>
 
       <div className="mb-6">
+        <div className="text-terminal-green font-bold">GitDash</div>
+        <p className="mt-2 text-terminal-text">
+          GitDash is an app that lets you view your GitHub statistics in an elegant and modern way. Get insights into your contributions, languages used, and much more.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Typescript, React, Tailwind, GitHub API</span>
+        </div>
+        <div className="mt-2">
+          <span className="text-terminal-green">Prod: </span>
+          <a href="https://dash-git-woad.vercel.app/" className="text-terminal-green" target="_blank" rel="noopener noreferrer">goTo</a>
+        </div>
+      </div>
+
+      <div className="mb-6">
         <div className="text-terminal-green font-bold">GitMe</div>
         <p className="mt-2 text-terminal-text">
           GitMe is a minimalist GitHub profile README maker for developers who value clean design. It features automatic stats, AI-powered sections, and instant deployment.
@@ -21,7 +36,7 @@ export const ProjectsSection: TerminalSection = {
         </div>
         <div className="mt-2">
           <span className="text-terminal-green">Prod: </span>
-          <a href="https://git-me-livid.vercel.app/" className="text-terminal-green" target="_blank" rel="noopener noreferrer">https://git-me-livid.vercel.app/</a>
+          <a href="https://git-me-livid.vercel.app/" className="text-terminal-green" target="_blank" rel="noopener noreferrer">goTo</a>
         </div>
       </div>
 
@@ -33,6 +48,10 @@ export const ProjectsSection: TerminalSection = {
         <div className="mt-2">
           <span className="text-terminal-yellow">Technologies: </span>
           <span className="text-terminal-text">Typescript, React, Gemini, Tailwind, balldontlie API</span>
+        </div>
+        <div className="mt-2">
+          <span className="text-terminal-green">Prod: </span>
+          <a href="https://nba-predict-nine.vercel.app/" className="text-terminal-green" target="_blank" rel="noopener noreferrer">goTo</a>
         </div>
       </div>
 
