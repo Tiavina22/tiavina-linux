@@ -9,15 +9,41 @@ export const ProjectsSection: TerminalSection = {
       <div className="section-divider my-4"></div>
       <div className="text-terminal-pink font-bold mb-3 text-xl">Projects:</div>
       <div className="section-divider mb-4"></div>
-      
+
       <div className="mb-6">
-        <div className="text-terminal-green font-bold">Lyrify</div>
+        <div className="text-terminal-green font-bold">GitMe</div>
         <p className="mt-2 text-terminal-text">
-          Lyrify is an app that brings your music to life with perfectly synced lyrics. Dive into a unique musical journey where every song reveals its story, one lyric at a time. In addition to featuring lyrics powered by the lrclib library, Lyrify also includes Malagasy songs from the renowned Tononkira collection. Enjoy a rich and authentic experience that combines precise lyric synchronization with the cultural diversity of Malagasy music and currently features 500 lyrics.
+          GitMe is a minimalist GitHub profile README maker for developers who value clean design. It features automatic stats, AI-powered sections, and instant deployment.
         </p>
         <div className="mt-2">
           <span className="text-terminal-yellow">Technologies: </span>
-          <span className="text-terminal-text">Dart, Flutter, JavaScript, Node.js, MySQL</span>
+          <span className="text-terminal-text">Typescript, React, Gemini, Tailwind, GitHub API</span>
+        </div>
+        <div className="mt-2">
+          <span className="text-terminal-green">Prod: </span>
+          <a href="https://git-me-livid.vercel.app/" className="text-terminal-green" target="_blank" rel="noopener noreferrer">https://git-me-livid.vercel.app/</a>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">NbaPredict</div>
+        <p className="mt-2 text-terminal-text">
+          NbaPredict is an app that compares NBA teams and provides AI-powered predictions on the likely winner, based on the latest performance stats.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Typescript, React, Gemini, Tailwind, balldontlie API</span>
+        </div>
+      </div>
+
+      <div className="mb-6">
+        <div className="text-terminal-green font-bold">Lyrify</div>
+        <p className="mt-2 text-terminal-text">
+        Lyrify is an app that syncs your music with lyrics, featuring over 500 songs including Malagasy tracks from the Tononkira collection.
+        </p>
+        <div className="mt-2">
+          <span className="text-terminal-yellow">Technologies: </span>
+          <span className="text-terminal-text">Dart, Flutter, JavaScript, Node, MySQL</span>
         </div>
       </div>
 
