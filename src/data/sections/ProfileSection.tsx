@@ -53,7 +53,7 @@ export const ProfileSection: TerminalSection = {
           </div>
           <div className="flex items-center">
             <span className="text-terminal-yellow font-bold">Age: </span>
-            <span className="text-terminal-text ml-2">21</span>
+            <span className="text-terminal-text ml-2">20</span>
           </div>
         </div>
 
