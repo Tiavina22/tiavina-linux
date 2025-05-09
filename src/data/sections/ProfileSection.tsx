@@ -35,13 +35,13 @@ export const ProfileSection: TerminalSection = {
             <span className="text-terminal-yellow font-bold">Name: </span>
             <span className="text-terminal-text ml-2">Tiavina Ramilison</span>
           </div>
-          <div className="flex items-center">
-            <span className="text-terminal-yellow font-bold">XP: </span>
-            <span className="text-terminal-text ml-2">1 year</span>
-          </div>
+         <div className="flex items-center">
+            <span className="text-terminal-yellow font-bold">XP:</span>
+            <span className="text-terminal-text ml-2">18 months</span>
+         </div>
           <div className="flex items-center">
             <span className="text-terminal-yellow font-bold">Status: </span>
-            <span className="text-terminal-text ml-2">Software Engineer Student</span>
+            <span className="text-terminal-text ml-2">Software Engineer</span>
           </div>
           <div className="flex items-center">
             <span className="text-terminal-yellow font-bold">Location: </span>
