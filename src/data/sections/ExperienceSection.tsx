@@ -34,6 +34,18 @@ export const ExperienceSection: TerminalSection = {
       </div>
 
       <div className="mb-6">
+        <div className="text-terminal-green font-bold">Backend Developer</div>
+        <div className="text-terminal-yellow italic">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:underline">
+            FlyIN
+          </a> | August 2024 - September 2025 (Remote CDD, 2 Months)
+        </div>
+        <ul className="mt-2 pl-5 list-disc text-terminal-text">
+          <li>Developing backend features for the company's aeronautics managment platform airport.</li>
+        </ul>
+      </div>
+
+      <div className="mb-6">
         <div className="text-terminal-green font-bold">DevOps & Mobile Developer</div>
         <div className="text-terminal-yellow italic">
           <a href="https://www.facebook.com/profile.php?id=100088866013531" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:underline">
