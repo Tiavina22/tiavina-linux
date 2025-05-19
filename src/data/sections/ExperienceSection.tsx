@@ -17,7 +17,7 @@ export const ExperienceSection: TerminalSection = {
           </a> | Mai 2025 - Present
         </div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
-          <li></li>
+          <li>Leading the architecture and development of core software and backend services.</li>
         </ul>
       </div>
 
@@ -38,7 +38,7 @@ export const ExperienceSection: TerminalSection = {
         <div className="text-terminal-yellow italic">
           <a href="#" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:underline">
             FlyIN
-          </a> | August 2024 - September 2025 (Remote CDD, 2 Months)
+          </a> | August 2024 - September 2024 (Remote CDD, 2 Months)
         </div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
           <li>Developing backend features for the company's aeronautics managment platform airport.</li>
