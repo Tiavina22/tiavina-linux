@@ -10,23 +10,23 @@ export const ExperienceSection: TerminalSection = {
       <div className="section-divider mb-4"></div>
       
       <div className="mb-6">
-        <div className="text-terminal-green font-bold">Software & Mobile Developer</div>
+        <div className="text-terminal-green font-bold">Lead Developer</div>
         <div className="text-terminal-yellow italic">
           <a href="https://vanilla-pay.net/" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:underline">
             Vanilla Pay International
-          </a> | January 2025 - Present
+          </a> | Mai 2025 - Present
         </div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
-          <li>Developing new features for the company's all platform.</li>
+          <li></li>
         </ul>
       </div>
 
       <div className="mb-6">
-        <div className="text-terminal-green font-bold">Mobile Develop Intern</div>
+        <div className="text-terminal-green font-bold">Software & Mobile Developer</div>
         <div className="text-terminal-yellow italic">
           <a href="https://vanilla-pay.net/" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:underline">
             Vanilla Pay International
-          </a> | October 2024 - December 2025 (3 Months)
+          </a> | October 2024 - April 2025 (7 Months)
         </div>
         <ul className="mt-2 pl-5 list-disc text-terminal-text">
           <li>Developing new features for the company's mobile platform.</li>
